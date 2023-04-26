@@ -1,0 +1,102 @@
+﻿body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.searchresults {
+    margin-top: 100px;
+    background: white;
+    width: 100%;
+    height: 1050px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.toptext {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.product1 {
+    margin-left: 203px;
+    background: rgb(40,6,66,0.85);
+    width: 65%;
+    height: 100px;
+    margin-bottom: 44px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.product2 {
+    margin-top: 20px;
+    margin-left: 203px;
+    background: rgb(40,6,66,0.85);
+    width: 65%;
+    height: 100px;
+    margin-bottom: 44px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.product3 {
+    margin-top: 20px;
+    margin-left: 203px;
+    background: rgb(40,6,66,0.85);
+    width: 65%;
+    height: 100px;
+    margin-bottom: 44px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.product4 {
+    margin-top: 20px;
+    margin-left: 203px;
+    margin-bottom: 112px;
+    background: rgb(40,6,66,0.85);
+    width: 65%;
+    height: 100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.sofa1 {
+    width: 15%;
+    height: auto;
+}
+
+.productdetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+.linktext {
+    color: white;
+}
+
+.linktext2 {
+    color: white;
+}
+
+.linktext3 {
+    color: white;
+}
+
+.linktext4 {
+    color: white;
+}

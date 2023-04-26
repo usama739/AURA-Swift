@@ -1,0 +1,6 @@
+bin/
+obj/
+.vs/
+Urban-Wood.csproj.user
+Web.config
+Urban-Wood.csproj

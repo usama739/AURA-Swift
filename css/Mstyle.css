@@ -1,0 +1,751 @@
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.login_buttons{
+    display:flex;
+    flex-direction:column;
+    margin-left:160px;
+}
+.forgot_textboxes{
+    display:flex;
+    flex-direction:column;
+}
+.forgot_button {
+    display: flex;
+    flex-direction: column;
+    margin-left: 128px;
+}
+.top_bar {
+    background: #33326d;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    position: sticky;
+    top: 0px;
+}
+
+.logo_and_searchbar {
+    width: 100%;
+    height: 95px;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 30px;
+    background-color: white;
+    z-index:10;
+}
+
+.logo_div {
+    width: 20%;
+}
+
+.logo {
+    width: 30%;
+    height: auto;
+    margin-left: 130px;
+    margin-top: 40px;
+}
+
+
+#searchbar {
+    width: 500px;
+    height: 26px;
+    margin-top: 50px;
+    margin-left: 130px;
+    background-color: white;
+    border: 3px solid #3f126b;
+    border-radius: 7px;
+}
+
+#searchgo {
+    color: #3f126b;
+    padding-top:3px;
+    display: inline-block;
+    width: 54px;
+    height: 26px;
+    margin-bottom: 5px;
+    margin-left: 1px;
+    background: white;
+    border: 3px solid #3f126b;
+    border-radius: 7px;
+    border-left-color: #3f126b;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+    #searchgo:hover {
+        width: 54px;
+        padding-top: 3px;
+        height: 26px;
+        margin-left: 1px;
+        margin-bottom: 5px;
+        color: white;
+        background: #3f126b;
+        border: 3px solid #3f126b;
+        border-radius: 7px;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+.login {
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+}
+
+.profile {
+    /*margin-top: 42px;*/
+    padding-top: 7px;
+    width: 120px;
+    height: 30px;
+    background: #3f126b;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid #3f126b;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 3px;
+}
+
+    .profile:hover {
+        /* margin-top: 42px;*/
+        padding-top: 7px;
+        margin-left: 3px;
+        width: 120px;
+        height: 30px;
+        border: 2px solid #3f126b;
+        background: white;
+        color: #3f126b;
+        border-radius: 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+
+.mycart {
+    padding-top: 7px;
+    text-decoration: none;
+    /*margin-top: 42px;*/
+    margin-left: 150px;
+    width: 90px;
+    height: 30px;
+    background: #3f126b;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid #3f126b;
+}
+
+    .mycart:hover {
+        padding-top: 7px;
+        text-align: center;
+        text-decoration: none;
+        /* margin-top: 42px;*/
+        margin-left: 150px;
+        width: 90px;
+        height: 30px;
+        border: 2px solid #3f126b;
+        background: white;
+        color: #3f126b;
+        border-radius: 20px;
+    }
+
+@media only screen and (max-width:957px) {
+    .logo {
+        width: 50%;
+        margin-left: 63px;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .searchbar {
+        margin-left: 66px;
+        width: 283px;
+    }
+
+    #searchbar {
+        margin-left: 2px;
+        width: 75%;
+    }
+
+    .mycart {
+        margin-left: 5px;
+    }
+
+        .mycart:hover {
+            margin-left: 5px;
+        }
+
+    .profile {
+        margin-top: 2px;
+    }
+
+        .profile:hover {
+            margin-top: 2px;
+        }
+}
+
+@media only screen and (max-width:1350px) {
+    .searchbar {
+        margin-left: 66px;
+        width: 283px;
+    }
+
+    #searchgo {
+        width: 30px;
+    }
+
+        #searchgo:hover {
+            width: 30px;
+        }
+
+    #searchbar {
+        margin-left: 2px;
+        width: 75%;
+        margin-top: 20px;
+    }
+
+    .login {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .mycart {
+        margin-left: 5px;
+    }
+
+        .mycart:hover {
+            margin-left: 5px;
+        }
+
+    .profile {
+        margin-top: 2px;
+    }
+
+        .profile:hover {
+            margin-top: 2px;
+        }
+}
+
+.navbar {
+    width: 100%;
+    height: 40px;
+    background: #280642;
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 125px;
+    z-index:10
+}
+
+#navbutton {
+    width: 30%;
+    height: 40px;
+    background: #280642;
+    float: left;
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+    #navbutton:hover {
+        text-decoration: none;
+        width: 30%;
+        height: 40px;
+        background: white;
+        float: left;
+        color: #280642;
+        display: block;
+        text-align: center;
+        padding-top: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+.bigimage {
+
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    height: 100%;
+}
+
+.big_home_image {
+    width: 100%;
+    height: 614px;
+    position: relative;
+    z-index:-1;
+}
+
+.bedroomimg {
+    width: 100%;
+    height: 608px;
+    overflow: hidden;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background: #280642;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    padding: 20px;
+    font-family: 'Global Sans Serif';
+}
+
+.names {
+    width: 100%;
+    height: 100px;
+    background: #280642;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    font-family: 'Global Sans Serif';
+}
+
+#mahir {
+    margin-right: 60px;
+}
+
+#burhan {
+    margin-right: 60px;
+}
+#haleema {
+    margin-right: 60px;
+}
+#mahad {
+    margin-right: 60px;
+}
+.userForm {
+    z-index: 1;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    opacity: 5;
+    padding: 2px;
+    width: 500px;
+    margin: auto;
+    margin-top: 200px;
+    margin-left:400px;
+    background: rgb(255,255,255,0.85);
+    margin-bottom: 147px;
+    box-shadow: -5px 10px 100px silver;
+}
+
+    .userForm input, .userForm textarea, .userForm select {
+        margin: 5px;
+        width: 80%;
+        border-radius: 5px;
+        border: 1px solid #dadada;
+        padding: 5px;
+    }
+
+    .userForm .formContent {
+        margin: 20px 50px 25px 25px;
+        width: 469px;
+    }
+
+    .userForm .formTitle {
+        width: 95%;
+        border-radius: 15px;
+        padding: 15px;
+        margin: -3px 0 0 -3px;
+        background: #280642;
+        color: White;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.userForm input[type="submit"] {
+    background: #280642;
+    color: White;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    width: 101px;
+}
+
+    .userForm input[type="submit"]:hover {
+        cursor: pointer;
+        background: white;
+        color: #280642;
+    }
+
+.userNav {
+    float: left;
+    width: 200px;
+    margin: 40px 5px 5px 5px;
+    text-align: center;
+    z-index: 1;
+}
+
+.classToDefineBackgroundSetCss {
+    background-image: url('images/bedroom.jpg');
+}
+
+.navContent {
+    margin-top: 20px;
+    background: transparent;
+    padding: 15px;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    opacity: 5;
+}
+
+.accountMain {
+    margin: 10px 5px 5px 5px;
+    margin-bottom: 147px;
+    width: 70%;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    z-index:1;
+}
+
+.ProfileView {
+    background: black;
+    width: 40%;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 147px;
+}
+
+.navTitle {
+    border-radius: 15px;
+    width: 150%;
+    padding: 5px;
+    background-color: #280642;
+    color: White;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    margin: -15px 0 0 -13px;
+}
+
+.adminNavTitle .navTitle {
+    background: #CC3300;
+}
+
+.sideForm input[type="submit"] {
+    border-radius: 15px;
+    width: 90%;
+    padding: 5px 20px 5px 20px;
+    background: purple;
+    color: White;
+    text-align: center;
+    font-size: 13px;
+    margin: 5px 0 0 -8px;
+}
+
+    .sideForm input[type="submit"]:hover {
+        cursor: pointer;
+        background: purple;
+        color: #280642;
+    }
+
+
+.big-imgae {
+    /* The image used */
+    background-image: url("images/bedroom.jpg");
+    /* Control the height of the image */
+    min-height: 380px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.cms {
+    width: 100%;
+    padding: 8px 0px 8px 0;
+    margin-top: 15px;
+    background: #005387;
+    color: White;
+    font-weight: bold;
+    text-align: center;
+}
+
+.adminMessage {
+    margin: 20px;
+    text-align: justify;
+}
+
+/*addProduct page*/
+
+.formContent input[type="radio"] {
+    width: auto;
+    height: auto;
+}
+
+.adminForm {
+    margin-top: 10px;
+}
+
+.productImageContainer {
+    width: 30%;
+    margin: 25px;
+    float: left;
+}
+
+    .productImageContainer img {
+        max-width: 300px;
+    }
+
+.productInfo {
+    margin: 25px;
+    width: 60%;
+    float: left;
+    color: #666;
+    line-height: 25px;
+}
+
+    .productInfo .title {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+
+
+.buyButton {
+    padding: 10px 30px 10px 30px;
+    margin: 10px 20px 10px -5px;
+    background: orange;
+    border-radius: 5px;
+    border: 1px solid #e0bc27;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+    .buyButton:hover {
+        cursor: pointer;
+        box-shadow: 1px 1px 5px gray;
+    }
+
+.stickyNav {
+    width: 1000px;
+    margin: auto;
+    background: #064661;
+    border-radius: 5px;
+    color: White;
+    padding: 10px;
+    font-size: 12px;
+    box-shadow: 1px 5px 5px grey;
+}
+
+.navTop {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -510px;
+}
+
+.stickyNav a {
+    color: White;
+    text-decoration: none;
+}
+
+    .stickyNav a:hover: {
+        cursor: pointer;
+    }
+
+.navLink {
+    padding: 15px;
+}
+
+.cart {
+    display: inline-block;
+    float: right;
+    font-size: 15px;
+}
+
+.rememberme {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+}
+
+.userinfo-display {
+    display: flex;
+    flex-direction: column;
+}
+
+.statistics {
+    margin-left: 196px;
+    font-family: 'Global Sans Serif';
+    font-size: 20px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.Star {
+    background-image: url(/images/Star.gif);
+    height: 17px;
+    width: 17px;
+    
+}
+
+.WaitingStar {
+    background-image: url(/images/WaitingStar.gif);
+    height: 17px;
+    width: 17px;
+}
+
+.FilledStar {
+    background-image: url(/images/FilledStar.gif);
+    height: 17px;
+    width: 17px;
+}
+
+/*aboutus.aspx*/
+
+.aboutus_div {
+    background-color: #280642;
+    width: 93%;
+    height: 350px;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    margin-left: 50px;
+    margin-right: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blanchedalmond;
+    padding-top:30px;
+    
+}
+.employee{
+    margin-left:30px;
+    font-weight:500;
+    font-size:40px;
+}
+.designation {
+    margin-left: 30px;
+    font-weight: 300;
+    font-size: 20px;
+}
+.person_description {
+    margin-left: 30px;
+    font-weight: 100;
+    font-size: 15px;
+}
+.photo{
+    width:26%;
+    height:auto;
+    margin-left:900px;
+    margin-bottom:50px;
+    margin-top:-210px;
+}
+.dropdown_word {
+    margin-top: -38px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:16px;
+}
+
+
+.dropdown {
+    float: none;
+    /*overflow: hidden;*/
+    width: 30%;
+    height:55px;
+    background:#280642;
+    z-index:10;
+    text-align:center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+    /* Dropdown button */
+    .dropdown .dropbtn {
+        height: 55px;
+        z-index:10;
+        width:100%;
+        background-color:#280642;
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit; /* Important for vertical align on mobile phones */
+    }
+
+    /* Add a red background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        background-color: white;
+        color:#280642;
+    }
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    /*
+    width:30%;*/
+    width:25%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    /* Links inside the dropdown */
+    .dropdown-content button {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        border:none;
+        border-bottom:double;
+        border-color:#280642;
+        background:white;
+        width:100%;
+        display: block;
+        text-align: center;
+    }
+
+        /* Add a grey background color to dropdown links on hover */
+        .dropdown-content button:hover {
+            background-color: #280642;
+            color:white;
+        }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}

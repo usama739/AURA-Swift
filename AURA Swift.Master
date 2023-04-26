@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AURA Swift.Master.cs" 
+    Inherits="AURA_Swift.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="css/mycartstyle.css" rel="stylesheet" />
+    <link href="css/productstyle.css" rel="stylesheet" />
+    <link href="css/searchresultstyle.css" rel="stylesheet" />
+    <link href="css/Mstyle.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">       
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <div>
+        <div class="top_bar">
+            <p>FREE GROCERY DELIVERY! WE SERVED FRESH FRUITS AND HYGIENIC FOOD.</p>
+        </div>
+        <div class="logo_and_searchbar">
+            <div class="logo_div">
+                <img src="images/log.png" class="logo" />
+            </div>
+
+            <div class="searchbar">
+                <input type="text" id="searchbar" placeholder="Search" />
+                <a id="searchgo" href="javascript:searchgo_click();">Go!</a>
+            </div>
+            <div class="login">
+                <a class="mycart" href="mycart.aspx">Cart</a>
+                <a class="profile" href="sellerpage.aspx">Profile</a>
+            </div>
+
+        </div>
+
+        <div class="navbar">
+            <a id="navbutton" href="Home.aspx">Home</a>
+            <a id="navbutton" href="filter.aspx">Filter</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Categories
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <button onclick="javascript:GROCERYgo_click();" >GROCERY</button>
+                    <button onclick="javascript:FRUITSgo_click();">FRUITS</button>
+                    <button onclick="javascript:VEGETABLEgo_click();">VEGETABLE</button>
+                    <button onclick="javascript:JUNKFOODgo_click();">JUNK FOOD</button>
+                    <button onclick="javascript:MEATgo_click();">MEAT</button>
+                </div>
+            </div>
+            <a id="navbutton" href="aboutus.aspx">About Us</a>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        </div>
+        <footer>
+            <div class="footer">
+                <p>Developed by:</p>
+                <div class="names">
+                    <p> Hafiz Muhammad AMISH &nbsp&nbsp&nbsp &nbsp&nbsp&nbsp</p>
+                    <p>Muhammad RAMZAN &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                    <p>USAMA ASLAM &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                    <p>MUHAMMAD AHMED</p>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
