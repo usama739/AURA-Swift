@@ -1,4 +1,4 @@
-# E-commerce Shopping Platform
+# AURA Swift
 
 This project is a web-based e-commerce platform that provides numerous facilities for both sellers and buyers to sell and purchase various groceries and food items. The platform is built using .NET for the backend and SQL for the database, offering a seamless shopping experience with advanced features.
 
